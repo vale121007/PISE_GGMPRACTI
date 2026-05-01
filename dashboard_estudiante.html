@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Estudiante - PISE-GGM</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f4f7f6;
+        }
+
+        /* 2. Maquetación Semántica y ajuste de altura */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--gris-fondo);
+            display: flex;
+            flex-direction: column; /* Esto permite que el footer se empuje al fondo */
+        }
+
+        header {
+            background-color: var(--azul-profundo);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--verde-institucional);
+        }
+
+        /* 6. Organización Visual: Contenedor Principal */
+        main {
+            flex: 1; /* Ocupa todo el espacio disponible para que no haya huecos abajo */
+            max-width: 1200px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* Información del Usuario Solicitada */
+        .seccion-usuario {
+            background: var(--blanco);
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+            border-left: 8px solid var(--amarillo-institucional);
+        }
+
+        .user-data h2 { margin: 0; color: var(--azul-profundo); }
+        .user-data p { margin: 5px 0 0; color: #555; font-size: 1.1rem; }
+
+        /* Cuadrícula de Botones del Mapa de Navegación */
+        .grid-estudiante {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card-boton {
+            background: var(--blanco);
+            padding: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--azul-profundo);
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #eee;
+        }
+
+        .card-boton:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        /* Botón Prioritario: Ver Calificaciones [P12] */
+        .prioritario {
+            background-color: var(--verde-institucional);
+            color: white;
+            border: none;
+        }
+
+        .prioritario:hover {
+            background-color: #1e5a08;
+        }
+
+        .icon { font-size: 3.5rem; margin-bottom: 15px; }
+
+        .btn-cerrar {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+            padding: 12px 30px;
+            background-color: #c0392b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-cerrar:hover { background-color: #a93226; }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-top: 4px solid var(--amarillo-institucional);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="font-size: 1.5rem; font-weight: bold;">PISE-GGM</div>
+        <nav>
+            <span style="background: rgba(255,255,255,0.1); padding: 8px 15px; border-radius: 20px; font-size: 0.9rem;">
+                Sesión: Estudiante
+            </span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="seccion-usuario">
+            <div class="user-data">
+                <h2>Hola, Gabriel García Márquez</h2>
+                <p>Grado: 11-01 | Código: 2026001 | Sede: Tunja</p>
+            </div>
+            <div style="text-align: right;">
+                <span style="color: var(--verde-institucional); font-weight: bold;">● Estudiante Activo</span>
+            </div>
+        </section>
+
+        <div class="grid-estudiante">
+            <a href="calificaciones_estudiante.html" class="card-boton prioritario">
+                <span class="icon">📝</span>
+                VER CALIFICACIONES
+            </a>
+
+            <a href="horario_estudiante.html" class="card-boton">
+                <span class="icon">📅</span>
+                Ver Horario
+            </a>
+
+            <a href="recursos.html" class="card-boton">
+                <span class="icon">📚</span>
+                Recursos Académicos
+            </a>
+
+            <a href="actividades.html" class="card-boton">
+                <span class="icon">🏆</span>
+                Actividades
+            </a>
+
+            <a href="estado_matricula.html" class="card-boton">
+                <span class="icon">📑</span>
+                Estado de Matrícula
+            </a>
+        </div>
+
+        <a href="inicio.html" class="btn-cerrar">Cerrar Sesión]</a>
+    </main>
+
+    <footer>
+        <p>Colegio Gabriel García Márquez - Tunja | Excelencia y Valores &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
