@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PISE-GGM</title>
+    <style>
+        :root {
+            --verde-institucional: #297D0B;
+            --amarillo-institucional: #FFD700;
+            --azul-profundo: #1a252f;
+            --blanco: #ffffff;
+            --gris-fondo: #f0f2f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--gris-fondo);
+        }
+
+        header {
+            background-color: var(--azul-profundo);
+            padding: 1rem;
+            border-bottom: 4px solid var(--verde-institucional);
+        }
+
+        nav { display: flex; justify-content: center; }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border-top: 5px solid var(--amarillo-institucional);
+        }
+
+        h2 { color: var(--azul-profundo); margin-bottom: 25px; }
+
+        .form-group { text-align: left; margin-bottom: 20px; }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--azul-profundo);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* ESTA ES LA CLAVE: El enlace ahora parece un botón */
+        .btn-enlace-login {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            background-color: var(--verde-institucional);
+            color: white;
+            text-decoration: none; /* Quita el subrayado */
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .btn-enlace-login:hover {
+            background-color: #1e5a08;
+            color: white;
+        }
+
+        .links-secundarios {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .links-secundarios a {
+            color: var(--verde-institucional);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: var(--azul-profundo);
+            color: var(--blanco);
+            text-align: center;
+            padding: 15px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav><a href="inicio.html">← Volver al Inicio</a></nav>
+    </header>
+
+    <main>
+        <section class="login-card">
+            <h2>Acceso al Sistema</h2>
+            
+            <div class="form-group">
+                <label for="usuario">ID de Usuario:</label>
+                <input type="text" id="usuario" placeholder="Documento de identidad">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="••••••••">
+            </div>
+
+            <a href="seleccion_rol.html" class="btn-enlace-login">Iniciar Sesión</a>
+
+           <div class="links-secundarios">
+                <a href="recuperar.html">¿Olvidó su contraseña?</a>
+                <div style="margin-top: 5px;">
+                    <a href="registro.html" style="font-weight: bold; color: var(--azul-profundo);">Registrarse / Solicitar Matrícula</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Colegio Gabriel García Márquez - Tunja | PISE-GGM &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
