@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PISE-GGM</title>
+</head>
+<body>
+
+<header>
+  <h1>PISE-GGM</h1>
+  <nav>
+    <a href="quienessomos.html">¿Quienes somos?</a>
+        <a href="oferta.html">Oferta Academica</a>
+        <a href="noticias.html">Noticias</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="matriculas.html">Matriculas</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Login</a>
+        <main>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <p>Bienvenidos a la Plataforma de información y servicios educativos Colegio Gabriel García Márquez</p>
+    <h2>Formando niños y jovenes de Paz y Bien</h2>
+    <a href="contacto.html" class="btn">Solicitar información</a>
+  </div>
+</section>
+
+<section class="cards">
+  <div class="card">
+    <h3>Excelencia Académica</h3>
+    <p>Educación de alta calidad con enfoque moderno.
+        "Educación de alta calidad con enfoque moderno."
+
+Este pilar representa el compromiso del colegio con el rigor intelectual y la innovación pedagógica. No se trata solo de transmitir conocimientos, sino de transformar la manera en que los estudiantes aprenden:
+
+Metodologías Activas: Implementamos enfoques modernos donde el estudiante es el protagonista de su aprendizaje, fomentando el pensamiento crítico y la resolución de problemas.
+
+Vanguardia Tecnológica: Integramos herramientas digitales y recursos actualizados que preparan a los alumnos para los retos de un mundo globalizado.
+
+Resultados Tangibles: Buscamos que cada estudiante alcance su máximo potencial académico, garantizando una base sólida para su futura formación profesional.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Valores y Comunidad</h3>
+    <p>Formamos estudiantes con principios y valores.
+        Para nosotros, la educación va más allá de los libros; se trata de construir el carácter. Este cuadro destaca el tejido humano que sostiene a nuestra institución:
+
+Ética y Responsabilidad: Trabajamos diariamente en cultivar la honestidad, el respeto y la solidaridad como pilares de la convivencia ciudadana.
+
+Sentido de Pertenencia: Creamos un ambiente seguro y acogedor donde cada estudiante, docente y padre de familia se siente parte de una gran familia.
+
+Impacto Social: Incentivamos a los jóvenes a ser agentes de cambio positivos en su entorno, entendiendo que sus acciones tienen un impacto directo en la sociedad.
+    </p>
+  </div>
+  <div class="card">
+    <h3>Desarrollo Integral</h3>
+    <p>Impulsamos habilidades académicas y personales.
+        "Impulsamos habilidades académicas y personales."
+
+Creemos que un estudiante exitoso es aquel que logra un equilibrio entre su mente, su cuerpo y sus emociones. Este enfoque busca una formación 360°:
+
+Inteligencia Emocional: Brindamos herramientas para que los alumnos reconozcan y gestionen sus emociones, desarrollando resiliencia y empatía.
+
+Talento y Creatividad: Fomentamos el arte, el deporte y la expresión personal, permitiendo que cada niño o joven descubra sus pasiones más allá del aula.
+
+Habilidades para la Vida (Soft Skills): Potenciamos la comunicación asertiva, el liderazgo y el trabajo en equipo, capacidades esenciales para el éxito personal en el siglo XXI.
+    </p>
+  </div>
+</section>
+</main> 
+<footer>
+  <p>©2026 PISE-GGM</p>
+</footer>
+
+</body>
+</html>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      color: #285900;
+      font-size: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .hero {
+    background: url(ANIMADOCOLGGM.png) no-repeat center center/cover;
+      color: white;
+      padding: 200px 100px;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.537);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 600px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+    }
+
+    .hero .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: rgb(8, 152, 13);
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      padding: 40px;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #29860a;
+      color: white;
+      text-align: center;
+      padding: 5px;
+      margin-top: 80px;
+    }
+
+    @media(max-width: 768px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
